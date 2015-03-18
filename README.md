@@ -8,7 +8,6 @@
 
 ##How The data was processed
 
-<br>
 Please find below the step by step process followed in order to tidy up the data
 
 ####1. The Training and the testing sets were merged to produce one complete data set.

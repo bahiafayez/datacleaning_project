@@ -1,29 +1,17 @@
 ##Project Description
-<br>
-Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+[Human Activity Recognition database](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#) built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. 
 
 
 ## Study Design
 This section covers how the raw data was collected and all the different variables used in this analysis.
 
 ### RAW DATA
-<br>
-Human Activity Recognition Using Smartphones Dataset
-Version 1.0
-===
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
-===
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
 
-###For each record it is provided:
+####For each record it is provided:
 ======================================
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -32,7 +20,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-###The dataset includes the following files:
+####The dataset includes the following files:
 =========================================
 
 - 'README.txt'
@@ -67,7 +55,7 @@ The following files are available for the train and test data. Their description
 - Each feature vector is a row on the text file.
 
 
-###Feature Selection 
+####Feature Selection 
 ===
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -136,7 +124,7 @@ In order to create the tiny data file, please follow these steps.
 * Set the current working directory to be that of the run_analysis.R
 * Run the run_analysis.R file without changing the location of any of the files. The data should be in the folder 'UCI HAR Dataset'
  		
- 	![alt text](folder_structure.png =600x260)
+ 	![Folder Structure](./folder_structure.png =600x260)
  
  * The tiny_data.txt file is the output file you are looking for.
 
@@ -151,11 +139,9 @@ In order to create the tiny data file, please follow these steps.
 
 For more detailed information please check the [README.md file](README.md)
 
-
 ===
-##Tiny Data
 
-<br> 
+##Tiny Data
 
 The output file tiny_data.txt, which is the tiny data after cleaning and processing the input raw data is a file of dimensions 180 observations * 68 variables. The data contains the mean value of 66 of the measured raw data over the activity and subject. The activity is one of six possible activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) that the subjects performed wearing a smartphone (Samsung Galaxy S II) on the waist. And the subject is an identifier of the person who performed the test, and since they are 30 people, then that number is between 1 and 30.
 
