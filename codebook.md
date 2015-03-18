@@ -12,7 +12,6 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
 
 ####For each record it is provided:
-======================================
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -21,7 +20,6 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - An identifier of the subject who carried out the experiment.
 
 ####The dataset includes the following files:
-=========================================
 
 - 'README.txt'
 
@@ -50,13 +48,13 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 ####Notes: 
-======
+
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
 
 ####Feature Selection 
-===
+
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -115,7 +113,7 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-===
+
 ## Creating the Tiny Data
 
 In order to create the tiny data file, please follow these steps.
@@ -124,7 +122,7 @@ In order to create the tiny data file, please follow these steps.
 * Set the current working directory to be that of the run_analysis.R
 * Run the run_analysis.R file without changing the location of any of the files. The data should be in the folder 'UCI HAR Dataset'
  		
- 	![Folder Structure](./folder_structure.png =600x260)
+ 	![Folder Structure](./folder_structure.png)
  
  * The tiny_data.txt file is the output file you are looking for.
 
@@ -139,7 +137,7 @@ In order to create the tiny data file, please follow these steps.
 
 For more detailed information please check the [README.md file](README.md)
 
-===
+
 
 ##Tiny Data
 
